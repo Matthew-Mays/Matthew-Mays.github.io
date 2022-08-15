@@ -1,20 +1,52 @@
-<html>
- <head>
-  <link href="./css/style.css" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matthew Mays Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
- </head>
+  <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<!-- Image Credits
+  Photo by <a href="https://unsplash.com/@dannylines?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Danny Lines</a> on <a href="https://unsplash.com/s/photos/cosmic?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  <a href="https://www.flaticon.com/free-icons/css" title="css icons">Css icons created by Freepik - Flaticon</a>
+  <a href="https://www.freepnglogos.com/pics/javascript">Javascript from freepnglogos.com</a>
+-->
 <body>
-  <header>
-    <h1>Matthew Mays</h1>
-  </header>
-  <p>Welcome to my website! If you like this check out my other work.</p>
-  <h2>Other Projects:</h2>
-  <ul>
-    <li><a href="https://matthew-mays.github.io/Dasmoto/">Dasmoto Project</a></li>
-    <li><a href="https://matthew-mays.github.io/cheat_sheet/">HTML/CSS Cheat Sheet</a></li>
-  </ul>
+  <div class="grid-container">
+    <header class="flex-head grid-head">
+      <h2 id="header-name">Matthew Mays</h2>
+      <nav class="nav-bar">
+        <ul class="flex-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  
+
+  <main class="grid-main cosmic-background">
+    <img src="./images/home-page.png" alt="" id="cosmic-photo">
+    <h1 id="welcome">Hi there,<br> I'm Matthew Mays</h1>
+    <h2 id="web-dev">Web Developer</h2>
+    <span id="welcome-box"></span>
+  </main>
+
+  <footer class="grid-foot">
+    <div class="flex-foot">
+      <img src="./images/html-logo.png" alt="" id="html-logo">
+      <img src="./images/css-logo.png" alt="" id="css-logo">
+      <img src="./images/js-logo.png" alt="" id="js-logo">
+    </div>
+  </footer>
+</div>
 </body>
- 
 </html>
