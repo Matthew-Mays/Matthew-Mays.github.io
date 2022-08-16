@@ -11,12 +11,13 @@ header {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 3px solid black;
-    background-color: #E5E7E4;
+    border-bottom: 2px solid black;
+    background-color: #021120;
+    color: #E5E7E4;
 }
 
 .nav-bar {
-    border-left: 2px solid black;
+    border-left: 1px solid #E5E7E4;
     height: 100%;
 }
 
@@ -28,10 +29,16 @@ header {
 .flex-nav li {
     display: flex;
     align-items: center;
-    padding: 0 0.5rem 0 0.5rem;
-    border-right: 2px solid black;
+    width: 110px;
+    border-right: 1px solid #E5E7E4;
     font-size: 1.2rem;
     height: 100%;
+}
+
+.flex-nav a {
+    width: 100%;
+    text-align: center;
+    color: #E5E7E4;
 }
 
 body {
@@ -78,7 +85,7 @@ body {
 #welcome {
     grid-row: 5 / span 3;
     grid-column: 2 / span 5;
-    font-size: 5rem;
+    font-size: 4rem;
     color: #78FCF1;
     z-index: 3;
     margin-left: 1rem;
@@ -91,7 +98,7 @@ body {
     grid-column: 4 / span 3;
     font-size: 3rem;
     font-family: 'Lato', sans-serif;
-    margin-top: 1rem;
+    margin-top: .5rem;
     margin-left: 1rem;
     color: #FCB069;
     z-index: 3;
@@ -107,6 +114,19 @@ body {
     border-radius: 15px;
 }
 
+#info-button {
+    display: flex;
+    grid-row: 9;
+    grid-column: 3 /span 3;
+    width: 55%;
+    font-size: 1.5rem;
+    background-color: #78FCF1;
+    border:  2px solid #FCB069;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .flex-foot {
     display: flex;
@@ -117,19 +137,38 @@ body {
 }
 .grid-foot {
     border-top: 3px solid black;
-    background-color: #E5E7E4;
+    background-color: #021120;
 }
 #html-logo {
     height: 3rem;
     width: 3rem;
+    background-color: #E5E7E4;
+    padding: 5px;
+    border-radius: 13px;
 }
 
 #css-logo {
     height: 3rem;
     width: 3rem;
+    background-color: #E5E7E4;
+    padding: 5px;
+    border-radius: 13px;
 }
 
 #js-logo {
     height: 3rem;
     width: 3rem;
+    background-color: #E5E7E4;
+    padding: 5px;
+    border-radius: 13px;
+}
+
+@media screen and (max-width: 1400px) {
+    #welcome {
+        font-size: 3.5rem;
+    }
+
+    #web-dev {
+        font-size: 2.5rem;
+    }
 }
