@@ -11,7 +11,7 @@ header {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid #F1F4F1;
     background-color: #021120;
     color: #E5E7E4;
 }
@@ -136,7 +136,7 @@ body {
     gap: 1rem;
 }
 .grid-foot {
-    border-top: 3px solid black;
+    border-top: 1px solid #F1F4F1;
     background-color: #021120;
 }
 #html-logo {
@@ -161,6 +161,10 @@ body {
     background-color: #E5E7E4;
     padding: 5px;
     border-radius: 13px;
+}
+
+#about-main {
+    background-color: #4B2349;
 }
 
 @media screen and (max-width: 1400px) {
